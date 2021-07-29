@@ -1,0 +1,259 @@
+var cat = {
+ name: ‘Fluffy’,
+ activities: [‘play’, ‘eat cat food’],
+ catFriends: [
+ {
+ name: ‘bar’,
+ activities: [‘be grumpy’, ‘eat bread omblet’],
+ weight: 8,
+ furcolor: ‘white’
+ }, 
+ {
+ name: ‘foo’,
+ activities: [‘sleep’, ‘pre-sleep naps’],
+ weight: 3
+ }
+ ]
+}
+console.log(cat);
+——————————————————————————————————————————————-
+	Add height and weight to Fluffy
+
+var cat = {
+ name: ‘Fluffy’,
+ activities: [‘play’, ‘eat cat food’],
+ catFriends: [
+ {
+ name: ‘bar’,
+ activities: [‘be grumpy’, ‘eat bread omblet’],
+ weight: 8,
+ furcolor: ‘white’
+ }, 
+ {
+ name: ‘foo’,
+ activities: [‘sleep’, ‘pre-sleep naps’],
+ weight: 3
+ }
+ ]
+}
+cat.height = 8;
+cat.weight = 10;
+
+console.log(cat);
+—————————————————————————————————————————————-
+2.Fluffy name is spelled wrongly.Update it to Fluffy
+
+var cat = {
+ name: ‘Fluffy’,
+ activities: [‘play’, ‘eat cat food’],
+ catFriends: [
+ {
+ name: ‘bar’,
+ activities: [‘be grumpy’, ‘eat bread omblet’],
+ weight: 8,
+ furcolor: ‘white’
+ }, 
+ {
+ name: ‘foo’,
+ activities: [‘sleep’, ‘pre-sleep naps’],
+ weight: 3
+ }
+ ]
+}
+cat.name = “Fluffyy”;
+console.log(cat);
+—————————————————————————————————————————————-
+3.List all the activities of Fluffyy’s catFriends.
+
+var cat = {
+ name: ‘Fluffy’,
+ activities: [‘play’, ‘eat cat food’],
+ catFriends: [
+ {
+ name: ‘bar’,
+ activities: [‘be grumpy’, ‘eat bread omblet’],
+ weight: 8,
+ furcolor: ‘white’
+ }, 
+ {
+ name: ‘foo’,
+ activities: [‘sleep’, ‘pre-sleep naps’],
+ weight: 3
+ }
+ ]
+}
+console.log(cat.catFriends[0].activities,cat.catFriends[1].activities);
+—————————————————————————————————————————————-
+4.Print the catFriends names.
+var cat = {
+ name: ‘Fluffy’,
+ activities: [‘play’, ‘eat cat food’],
+ catFriends: [
+ {
+ name: ‘bar’,
+ activities: [‘be grumpy’, ‘eat bread omblet’],
+ weight: 8,
+ furcolor: ‘white’
+ }, 
+ {
+ name: ‘foo’,
+ activities: [‘sleep’, ‘pre-sleep naps’],
+ weight: 3
+ }
+ ]
+}
+console.log(cat.catFriends[0].name, cat.catFriends[1].name);
+———————————————————————————————————————————————-
+5. Print the total weight of catFriends.
+
+console.log(+cat.catFriends[0].weight +  +cat.catFriends[1.weight);
+————————————————————————————————————————————————
+
+6. Print the total activities of all cats.
+
+console.log(concat(cat.catFriends[0].activities, cat.catFriends[1].activities);
+
+—————————————————————————————————————————————
+
+7. Add 2 more activities of bar & Foo cats.
+
+
+var cat = {
+ name: ‘Fluffy’,
+ activities: [‘play’, ‘eat cat food’],
+ catFriends: [
+ {
+ name: ‘bar’,
+ activities: [‘be grumpy’, ‘eat bread omblet’],
+ weight: 8,
+ furcolor: ‘white’
+ }, 
+ {
+ name: ‘foo’,
+ activities: [‘sleep’, ‘pre-sleep naps’],
+ weight: 3
+ }
+ ]
+}
+
+cat.catFriends[0].FavFood = “Milk”;
+cat.catFriends[0].FavFood = “Cheese”;
+console.log(cat);
+
+—————————————————————————————————————————-
+8. Update the fur color of Bar.
+
+cat.catFriends[0].furcolor = “Cream”;
+console.log(cat);
+
+—————————————————————————————————————————-
+
+9. 
+var myCar = {
+ make: ‘Bugatti’,
+ model: ‘Bugatti La Voiture Noire’,
+ year: 2019,
+ accidents: [
+ {
+ date: ‘3/15/2019’,
+ damage_points: ‘5000’,
+ atFaultForAccident: true
+ },
+ {
+ date: ‘7/4/2022’,
+ damage_points: ‘2200’,
+ atFaultForAccident: true
+ },
+ {
+ date: ‘6/22/2021’,
+ damage_points: ‘7900’,
+ atFaultForAccident: true
+ }
+ ]
+}
+Above is some information about my car. As you can see, I am not the best driver.
+I have caused a few accidents.
+Please update this driving record so that I can feel better about my driving skills.
+
+Loop over the accidents array. Change atFaultForAccident from true to false.
+
+Solution- 
+
+For (var i=0; i<myCar.accidents.length ; i++);
+{
+myCar.accidents[i].atFaultForAccident= false;
+}
+console.log(myCar);
+
+2. Print the dated of my accidents
+
+console.log(mycar.accidents.date);
+—————————————————————-
+Problem 1 :
+Write a function called “printAllValues” which returns an newArray of all the input object’s values.
+Input (Object):
+var object = {name: “RajiniKanth”, age: 33, hasPets : false};
+Output:
+[“RajiniKanth”, 33, false]
+
+
+Solution -
+var obj = {name : “RajiniKanth”, age : 33, hasPets : false};
+function printAllValues(obj) {
+ Return object.values(obj);
+}
+Console.log(printAllValues(obj));
+
+—————————————————————————————————————————————-
+
+Problem 2:
+Write a function called “printAllKeys” which returns an newArray of all the input object’s keys.
+Example Input:
+{name : ‘RajiniKanth’, age : 25, hasPets : true}
+Example Output:
+[‘name’, ‘age’, ‘hasPets’]
+
+
+Solution -
+var obj = {name : “RajiniKanth”, age : 25, hasPets : true};
+function printAllValues(obj) {
+ Return object.keys(obj);
+}
+Console.log(printAllValues(obj));
+
+
+—————————————————————————————————————————————————
+Problem 3:
+Write a function called “convertObjectToList” which converts an object literal into an array of arrays.
+Input (Object):
+var object = {name: “ISRO”, age: 35, role: “Scientist”};
+Output:
+[[“name”, “ISRO”], [“age”, 35], [“role”, “Scientist”]]
+
+
+Solution -
+var obj= {name: “ISRO”, age: 35, role: “Scientist”};
+function convertObjjectToList(obj) {
+ Return object.entries(obj);
+}
+Console.log(convertObjjectToList(obj));
+
+———————————————————————————————————————————————
+Problem 4:
+Write a function ‘transformFirstAndLast’ that takes in an array, and returns an object with:
+1) the first element of the array as the object’s key, and
+2) the last element of the array as that key’s value.
+Input (Array):
+var array = [“GUVI”, “I”, “am”, “Geek”];
+Output:
+var object = {
+GUVI : “Geek”
+}
+
+Solution:
+
+var arr = [“GUVI”, “I”, “am”, “a geek”];
+function transformFirstAndLast(arr) {
+ newObject = 
+ return newObject;
+}
